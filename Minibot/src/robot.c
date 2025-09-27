@@ -96,12 +96,21 @@ void Handle_Disabled_State()
 void Process_Remote_Input()
 {
     // USER CODE HERE
+    
+    g_robot_state.input.vx = ((g_remote.controller.left_stick.x) / (REMOTE_STICK_MAX)) * MAX_MOTOR_SPEED;
+    g_robot_state.input.vy = ((g_remote.controller.left_stick.y) / (REMOTE_STICK_MAX)) * MAX_MOTOR_SPEED;
+
+    g_robot_state.chassis.x_speed = g_robot_state.input.vx;
+    g_robot_state.chassis.y_speed = g_robot_state.input.vy;
+    g_robot_state.chassis.omega = g_remote.controller.right_stick.x;
+
+    g_robot_state.input.prev_left_switch = g_remote.controller.left_switch;
 }
 
 void Process_Chassis_Control()
 {
     //Andrew Liu
-     Chassis_Ctrl_Loop();
+    Chassis_Ctrl_Loop();
 }
 
 void Process_Gimbal_Control()
