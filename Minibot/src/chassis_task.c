@@ -8,6 +8,9 @@ extern Remote_t g_remote;
 
 float chassis_rad;
 
+// M2006 motors
+// Omnidrive 
+
 void Chassis_Task_Init()
 {
     // Init chassis hardware
