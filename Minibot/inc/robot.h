@@ -102,6 +102,6 @@ void Process_Launch_Control(void);
 
 extern Robot_State_t g_robot_state;
 
-#define MAX_MOTOR_SPEED 1
+#define MAX_ROBOT_SPEED 1
 
 #endif // ROBOT_H

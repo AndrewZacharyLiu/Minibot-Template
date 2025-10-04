@@ -10,5 +10,6 @@ void Chassis_Ctrl_Loop(void);
 #define WHEEL_RADIUS 0.05
 #define WHEEL_DISTANCE 1
 #define MOTOR_COUNT 4
+#define MINIBOT_THETA (45.0 * 3.14159265358979323846 / 180.0)
 
 #endif // CHASSIS_TASK_H
