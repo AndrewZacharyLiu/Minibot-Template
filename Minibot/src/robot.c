@@ -96,7 +96,7 @@ void Handle_Disabled_State()
 void Process_Remote_Input()
 {
     // USER CODE HERE
-    
+    //TODO: What is MAX MOTOR SPEED?
     g_robot_state.input.vx = ((g_remote.controller.left_stick.x) / (REMOTE_STICK_MAX)) * MAX_MOTOR_SPEED;
     g_robot_state.input.vy = ((g_remote.controller.left_stick.y) / (REMOTE_STICK_MAX)) * MAX_MOTOR_SPEED;
 
