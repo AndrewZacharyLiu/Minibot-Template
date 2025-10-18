@@ -100,7 +100,7 @@ void Process_Remote_Input()
     g_robot_state.input.vx = ((g_remote.controller.left_stick.x) / (REMOTE_STICK_MAX));
     g_robot_state.input.vy = ((g_remote.controller.left_stick.y) / (REMOTE_STICK_MAX));
 
-    g_robot_state.chassis.x_speed = g_robot_state.input.vx *  MAX_ROBOT_SPEED;
+    g_robot_state.chassis.x_speed = g_robot_state.input.vx * MAX_ROBOT_SPEED;
     g_robot_state.chassis.y_speed = g_robot_state.input.vy * MAX_ROBOT_SPEED;
     //According to Ronak, omega is not controllable via joystick
     //g_robot_state.chassis.omega = g_remote.controller.right_stick.x;

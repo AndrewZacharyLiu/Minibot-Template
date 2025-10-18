@@ -12,4 +12,8 @@ void Chassis_Ctrl_Loop(void);
 #define MOTOR_COUNT 4
 #define MINIBOT_THETA (45.0 * 3.14159265358979323846 / 180.0)
 
+//MR: precomputed constants
+#define SINT 0.70710678 
+#define COST 0.70710678  
+
 #endif // CHASSIS_TASK_H
